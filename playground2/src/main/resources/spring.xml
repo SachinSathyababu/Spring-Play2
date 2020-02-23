@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id='pulsar' class='com.example.playground2.model.Bike' scope='prototype' >
+    <property name="name" value="Pulsar"></property>
+    <property name="owner" value="Sachin"></property>
+    <property name="cost" value="99900"></property>
+    <property name="dob" value="2019/03/20"></property>
+    </bean>
+    
+    <bean id='bullet' class='com.example.playground2.model.Bike'>
+    <constructor-arg name="name" value="Bullet"></constructor-arg>
+    <constructor-arg name="owner" value="Suraj"></constructor-arg>
+    <constructor-arg name="cost" value="399900"></constructor-arg>
+    <constructor-arg name="dob" value="2019/12/12"></constructor-arg>
+    </bean>
+
+</beans>
